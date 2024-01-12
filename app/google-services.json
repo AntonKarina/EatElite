@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "970397456981",
+    "project_id": "eatelite-987cd",
+    "storage_bucket": "eatelite-987cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:970397456981:android:1a2f93d8a8f997c6a592dc",
+        "android_client_info": {
+          "package_name": "com.example.eatelite"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqgdfRZ2JAFH7ZVbJwMIF6zpMzbfftGGc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

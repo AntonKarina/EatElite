@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string-array name="activity_lee">
+            <item>Nivel scăzut</item>
+            <item>Nivel moderat</item>
+            <item>Nivel înalt</item>
+        </string-array>
+</resources>

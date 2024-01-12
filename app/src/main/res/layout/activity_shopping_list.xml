@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".ShoppingListActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lista de cumpărături"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:layout_alignParentTop="true"/>
+
+    <ListView
+        android:id="@+id/listViewShoppingList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/textViewTitle"
+        android:layout_above="@+id/buttonBackToMealPlan"
+        android:padding="16dp"/>
+
+    <Button
+        android:id="@+id/buttonBackToMealPlan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Înapoi la planul alimentar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>

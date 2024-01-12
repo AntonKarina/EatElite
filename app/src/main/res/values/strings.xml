@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">EatElite</string>
+    <string name="select_activity_level_prompt" />
+</resources>

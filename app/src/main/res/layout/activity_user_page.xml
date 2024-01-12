@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Vârstă"/>
+
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextAge"
+        android:layout_marginTop="8dp"
+        android:hint="Greutate(kg)"/>
+
+    <EditText
+        android:id="@+id/editTextHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextWeight"
+        android:layout_marginTop="8dp"
+        android:hint="Înălțime(cm)"/>
+
+
+    <Spinner
+        android:id="@+id/spinnerActivityLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextHeight"
+        android:layout_marginTop="8dp"
+        android:entries="@array/activity_lee"
+        android:prompt="@string/select_activity_level_prompt"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupGoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerActivityLevel"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonMaintain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menținere"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonLose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pierdere"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonGain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Câștig"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroupGoal"
+        android:layout_marginTop="16dp"
+        android:text="Calculează"/>
+
+    <TextView
+        android:id="@+id/textViewResults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonCalculate"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/buttonMealPlan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewResults"
+        android:layout_marginTop="16dp"
+        android:text="Vezi Planul Tău de Mese"
+        android:layout_gravity="center"
+         android:onClick="viewMealPlan"/>
+    <Button
+        android:id="@+id/buttonViewTasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonLogout"
+        android:layout_marginTop="16dp"
+        android:text="Vezi Task-uri" />
+
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:onClick="performLogout"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
